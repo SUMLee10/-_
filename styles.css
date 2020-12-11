@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+
+}
+
+#game {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.banner {
+    margin-top: 20px;
+    font-size: 2em;
+    height: 1.5em;
+}
+
+
+.welcome button {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-size: 2em;
+    border-radius: 5px;
+    letter-spacing: 0.5em;
+    text-align: center;
+}
+
+table {
+}
+
+td {
+    border: #999 1px solid;
+    width: 20px;
+    height: 20px;
+    background-color:#aaaaaa;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+}
+
+
+td > .cell {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: #aaaaaa;
+}
+
+td > .cell.clear {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color:#9F5F80;
+}
+
+td > .cell.exploded {
+    background-color: red;
+    color: #999;
+}
+
+table.exploded, table.exploded td {
+    background-color: red;
+}
+
+.loser{
+    position: absolute;
+    background-image: linear-gradient(to top, #c71d6f 0%, #d09693 100%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.loser h3 {
+    font-size: 3me;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome button {
+    margin: 20px;
+}
+
+.winner{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
